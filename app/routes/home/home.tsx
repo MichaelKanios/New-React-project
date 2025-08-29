@@ -1,4 +1,5 @@
-import type { Route } from "../+types/home";
+import type { Route } from "./+types/home";
+import { Link } from "react-router";
 
 
 export function meta({}: Route.MetaArgs) {
@@ -9,9 +10,13 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
+
+
   return <>
   <div>
     News 
   </div>
-  </>;
+ 
+
+  </>
 }

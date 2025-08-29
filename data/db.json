@@ -1,0 +1,154 @@
+{
+  "pagination": {
+    "limit": 12,
+    "offset": 0,
+    "count": 12,
+    "total": 12
+  },
+  "data": [
+    {
+      "author": "John Doe",
+      "title": "React 18 Released with Exciting Features",
+      "description": "Concurrent rendering and automatic batching arrive in React 18.",
+      "url": "https://example.com/react18",
+      "source": "TechCrunch",
+      "image": "https://via.placeholder.com/600x400.png?text=React+18",
+      "category": "technology",
+      "language": "en",
+      "country": "us",
+      "published_at": "2025-08-29T10:00:00Z"
+    },
+    {
+      "author": "Jane Smith",
+      "title": "Elections 2025: What to Expect",
+      "description": "Political analysts predict a tough battle in the upcoming elections.",
+      "url": "https://example.com/elections",
+      "source": "BBC News",
+      "image": "https://via.placeholder.com/600x400.png?text=Elections+2025",
+      "category": "politics",
+      "language": "en",
+      "country": "uk",
+      "published_at": "2025-08-28T15:30:00Z"
+    },
+    {
+      "author": "Michael Lee",
+      "title": "Champions League Final: A Night to Remember",
+      "description": "Real Madrid secures the title in a dramatic penalty shootout.",
+      "url": "https://example.com/champions",
+      "source": "ESPN",
+      "image": "https://via.placeholder.com/600x400.png?text=Champions+League",
+      "category": "sports",
+      "language": "en",
+      "country": "es",
+      "published_at": "2025-08-27T20:45:00Z"
+    },
+    {
+      "author": "Anna Williams",
+      "title": "Stock Markets Rally on Growth Data",
+      "description": "Wall Street surges as new economic data beats expectations.",
+      "url": "https://example.com/stocks",
+      "source": "Bloomberg",
+      "image": "https://via.placeholder.com/600x400.png?text=Markets",
+      "category": "business",
+      "language": "en",
+      "country": "us",
+      "published_at": "2025-08-27T09:10:00Z"
+    },
+    {
+      "author": "Emily Davis",
+      "title": "Hollywood Strikes Come to an End",
+      "description": "Actors and writers return to work after months of negotiations.",
+      "url": "https://example.com/hollywood",
+      "source": "Variety",
+      "image": "https://via.placeholder.com/600x400.png?text=Hollywood",
+      "category": "entertainment",
+      "language": "en",
+      "country": "us",
+      "published_at": "2025-08-26T14:00:00Z"
+    },
+    {
+      "author": "Chris Martin",
+      "title": "New COVID-19 Vaccine Shows Promise",
+      "description": "Latest trials reveal high efficiency against new variants.",
+      "url": "https://example.com/vaccine",
+      "source": "WHO",
+      "image": "https://via.placeholder.com/600x400.png?text=Vaccine",
+      "category": "health",
+      "language": "en",
+      "country": "global",
+      "published_at": "2025-08-26T08:00:00Z"
+    },
+    {
+      "author": "Alex Johnson",
+      "title": "NASA Confirms Discovery of Water on Mars",
+      "description": "Evidence suggests that Mars once had liquid water on its surface.",
+      "url": "https://example.com/mars",
+      "source": "NASA",
+      "image": "https://via.placeholder.com/600x400.png?text=Mars",
+      "category": "science",
+      "language": "en",
+      "country": "us",
+      "published_at": "2025-08-25T11:45:00Z"
+    },
+    {
+      "author": "Sophia Brown",
+      "title": "Tech Giants Face New Antitrust Rules",
+      "description": "EU regulators crack down on monopolistic practices.",
+      "url": "https://example.com/antitrust",
+      "source": "Reuters",
+      "image": "https://via.placeholder.com/600x400.png?text=Tech+Antitrust",
+      "category": "technology",
+      "language": "en",
+      "country": "eu",
+      "published_at": "2025-08-25T09:00:00Z"
+    },
+    {
+      "author": "Daniel White",
+      "title": "Olympics 2025: Countdown Begins",
+      "description": "Preparations underway as the world looks forward to the games.",
+      "url": "https://example.com/olympics",
+      "source": "ESPN",
+      "image": "https://via.placeholder.com/600x400.png?text=Olympics",
+      "category": "sports",
+      "language": "en",
+      "country": "jp",
+      "published_at": "2025-08-24T17:30:00Z"
+    },
+    {
+      "author": "Maria Gonzalez",
+      "title": "New Trends in Global Fashion Week",
+      "description": "Designers showcase innovative sustainable clothing lines.",
+      "url": "https://example.com/fashion",
+      "source": "Vogue",
+      "image": "https://via.placeholder.com/600x400.png?text=Fashion+Week",
+      "category": "entertainment",
+      "language": "en",
+      "country": "fr",
+      "published_at": "2025-08-24T13:00:00Z"
+    },
+    {
+      "author": "Robert Green",
+      "title": "AI Revolution in Education",
+      "description": "Schools adopt AI-powered tools to enhance learning.",
+      "url": "https://example.com/ai-education",
+      "source": "EdTech News",
+      "image": "https://via.placeholder.com/600x400.png?text=AI+Education",
+      "category": "technology",
+      "language": "en",
+      "country": "us",
+      "published_at": "2025-08-23T12:00:00Z"
+    },
+    {
+      "author": "Olivia Taylor",
+      "title": "Climate Change: Urgent Action Needed",
+      "description": "Scientists warn of rising sea levels and extreme weather patterns.",
+      "url": "https://example.com/climate",
+      "source": "National Geographic",
+      "image": "https://via.placeholder.com/600x400.png?text=Climate+Change",
+      "category": "science",
+      "language": "en",
+      "country": "global",
+      "published_at": "2025-08-23T08:15:00Z"
+    }
+  ]
+}
