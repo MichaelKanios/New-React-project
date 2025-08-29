@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import { Link } from "react-router";
-
+import HeroSlide from "~/components/HeroSlide";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -14,7 +14,7 @@ export default function Home() {
 
   return <>
   <div>
-    News 
+    <HeroSlide />
   </div>
  
 
