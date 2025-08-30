@@ -1,31 +1,35 @@
-import { useLoaderData } from "react-router-dom";
-import type { Article } from "~/services/api";
-import { getArticles } from "~/services/api";
-import HeroSlide from "~/components/HeroSlide";
+import type { Article } from "~/types";
+import type { Route } from "./+types/index";
 
-// Loader για το home route
-export async function loader() {
-  return getArticles();
+import HeroSlide from "~/components/HeroSlide";
+import { getArticles } from "~/services/api";
+import { Link } from "react-router-dom"; // <--- import Link
+
+// Loader
+export async function loader({ request }: Route.LoaderArgs) {
+  const projects = await getArticles();
+  return { projects };
 }
 
-export default function Home() {
-  const articles = useLoaderData() as Article[];
-   console.log("Articles from loader:", articles); 
+// Component
+export default function Home({ loaderData }: Route.ComponentProps) {
+  const { projects } = loaderData as { projects: Article[] };
 
   return (
     <div>
       <HeroSlide />
       <h1>Home Page</h1>
 
-      <div>
-    
-        
-        {articles?.map(article => (
-          <div key={article.id}>
-            {article.title} - {article.category}
-          </div>
+      <ul>
+        {projects.map((article) => (
+          <li key={article.id}>
+            {/* Κάνουμε τον τίτλο clickable */}
+            <Link to={`/article?id=${article.id}`}>{article.title}</Link>
+
+
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

@@ -1,11 +1,17 @@
-export type Project = {
-  id: string;
-  documentId: string;
+// src/services/api.ts
+
+//-- Οριζουμε τον τυπο δεδομενων --
+export type Article = {
+  id:number;
+  author: string;
   title: string;
   description: string;
-  image: string;
   url: string;
-  date: string;
+  source: string;
+  image: string;
   category: string;
-  featured: boolean;
+  language: string;
+  country: string;
+  published_at: string; // μπορείς να το βάλεις και ως Date αν θέλεις
+
 };
