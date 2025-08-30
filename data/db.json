@@ -1,12 +1,7 @@
 {
-  "pagination": {
-    "limit": 12,
-    "offset": 0,
-    "count": 12,
-    "total": 12
-  },
   "data": [
     {
+      "id": 1,
       "author": "John Doe",
       "title": "React 18 Released with Exciting Features",
       "description": "Concurrent rendering and automatic batching arrive in React 18.",
@@ -19,6 +14,7 @@
       "published_at": "2025-08-29T10:00:00Z"
     },
     {
+      "id": 2,
       "author": "Jane Smith",
       "title": "Elections 2025: What to Expect",
       "description": "Political analysts predict a tough battle in the upcoming elections.",
@@ -31,6 +27,7 @@
       "published_at": "2025-08-28T15:30:00Z"
     },
     {
+      "id": 3,
       "author": "Michael Lee",
       "title": "Champions League Final: A Night to Remember",
       "description": "Real Madrid secures the title in a dramatic penalty shootout.",
@@ -43,6 +40,7 @@
       "published_at": "2025-08-27T20:45:00Z"
     },
     {
+      "id": 4,
       "author": "Anna Williams",
       "title": "Stock Markets Rally on Growth Data",
       "description": "Wall Street surges as new economic data beats expectations.",
@@ -55,6 +53,7 @@
       "published_at": "2025-08-27T09:10:00Z"
     },
     {
+      "id": 5,
       "author": "Emily Davis",
       "title": "Hollywood Strikes Come to an End",
       "description": "Actors and writers return to work after months of negotiations.",
@@ -67,6 +66,7 @@
       "published_at": "2025-08-26T14:00:00Z"
     },
     {
+      "id": 6,
       "author": "Chris Martin",
       "title": "New COVID-19 Vaccine Shows Promise",
       "description": "Latest trials reveal high efficiency against new variants.",
@@ -79,6 +79,7 @@
       "published_at": "2025-08-26T08:00:00Z"
     },
     {
+      "id": 7,
       "author": "Alex Johnson",
       "title": "NASA Confirms Discovery of Water on Mars",
       "description": "Evidence suggests that Mars once had liquid water on its surface.",
@@ -91,6 +92,7 @@
       "published_at": "2025-08-25T11:45:00Z"
     },
     {
+      "id": 8,
       "author": "Sophia Brown",
       "title": "Tech Giants Face New Antitrust Rules",
       "description": "EU regulators crack down on monopolistic practices.",
@@ -103,6 +105,7 @@
       "published_at": "2025-08-25T09:00:00Z"
     },
     {
+      "id": 9,
       "author": "Daniel White",
       "title": "Olympics 2025: Countdown Begins",
       "description": "Preparations underway as the world looks forward to the games.",
@@ -115,6 +118,7 @@
       "published_at": "2025-08-24T17:30:00Z"
     },
     {
+      "id": 10,
       "author": "Maria Gonzalez",
       "title": "New Trends in Global Fashion Week",
       "description": "Designers showcase innovative sustainable clothing lines.",
@@ -127,6 +131,7 @@
       "published_at": "2025-08-24T13:00:00Z"
     },
     {
+      "id": 11,
       "author": "Robert Green",
       "title": "AI Revolution in Education",
       "description": "Schools adopt AI-powered tools to enhance learning.",
@@ -139,6 +144,7 @@
       "published_at": "2025-08-23T12:00:00Z"
     },
     {
+      "id": 12,
       "author": "Olivia Taylor",
       "title": "Climate Change: Urgent Action Needed",
       "description": "Scientists warn of rising sea levels and extreme weather patterns.",
