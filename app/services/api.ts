@@ -1,6 +1,6 @@
 import type { Article } from "~/types";
 
-const BASE_URL = "https://verbose-space-parakeet-5vg5j5pjq5424qq6-3000.app.github.dev";
+const BASE_URL = "http://localhost:3000";
 
 // helper για fetch
 async function fetchData<T>(endpoint: string): Promise<T> {

@@ -1,6 +1,7 @@
 import type { Article } from "~/types";
 import type { Route } from "./+types/index";
 import { getSports } from "~/services/api";
+import { Link } from "react-router";
 
 // Loader
 export async function loader({ request }: Route.LoaderArgs) {
@@ -16,10 +17,11 @@ export default function Sports({ loaderData }: Route.ComponentProps) {
     <section>
       <h2>Sports</h2>
       <ul>
-        {projects.map((s) => (
-          <li key={s.id}>
-            <h3>{s.title}</h3>
-            <p>{s.description}</p>
+        {projects.map((project) => (
+          <li key={project.id}>
+             <Link to={`/article?id=${project.id}`}>{project.description}</Link>
+             <li>{project.author}</li>
+             
           </li>
         ))}
       </ul>

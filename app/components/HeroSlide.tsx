@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Article } from "~/types";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,7 +14,7 @@ import './styles.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
-const HeroSlide =()=>{
+const HeroSlide =({projects})=>{
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
@@ -37,15 +38,22 @@ const HeroSlide =()=>{
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {projects.map((article) => (
+        <SwiperSlide key={article.id}>
+          <div className="slide-content">
+            <h2>{article.title}</h2>
+            {"image" in article ? (
+              <div className="w-full max-h-[500px] flex items-center justify-center overflow-hidden">
+                <img className="h-full w-auto object-cover" src={article.image} alt={article.title} />
+
+
+              </div>
+              
+            ) : null}
+            <p>{article.description}</p>
+          </div>
+        </SwiperSlide>
+      ))}
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
             <circle cx="24" cy="24" r="20"></circle>
@@ -56,5 +64,24 @@ const HeroSlide =()=>{
     </>
   );
 }
+/* ---- ΠΑΡΑΤΗΡΗΣΗ ----
+    Το slider θα εμφανιση όλα τα object που εχει το fetch αν θελουμε να το περιορισουμε 
+    βαζουμε ενα απο τα παρακατω
 
+    Μόνο τα πρώτα 3 άρθρα:
+{projects.slice(0, 3).map((article) => ( ... ))}
+
+
+Μόνο άρθρα κατηγορίας "technology":
+{projects.filter(a => a.category === "technology").map((article) => ( ... ))}
+
+
+Τυχαία 5 άρθρα:
+{projects
+  .sort(() => 0.5 - Math.random())
+  .slice(0, 5)
+  .map((article) => ( ... ))}
+
+
+*/
 export default HeroSlide
