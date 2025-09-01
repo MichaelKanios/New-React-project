@@ -21,5 +21,5 @@ export async function getArticles(): Promise<Article[]> {
 // 🔹 Sports (φιλτράρουμε από /data)
 export async function getSports(): Promise<Article[]> {
   const all = await fetchData<Article[]>("/data");
-  return all.filter((a) => a.category?.toLowerCase() === "sports");
+  return all.filter((a) => a.category === "sports");
 }

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Article } from "~/types";
+import { Link } from "react-router-dom"; // <--- import Link
 
 // Import Swiper styles
 import 'swiper/css';
@@ -39,18 +40,21 @@ const HeroSlide =({projects})=>{
         className="mySwiper"
       >
         {projects.map((article) => (
-        <SwiperSlide key={article.id}>
-          <div className="slide-content">
-            <h2>{article.title}</h2>
+        <SwiperSlide  key={article.id}>
+          <div className="slide-content flex">
+
+            <div className='flex flex-col justify-center text-sm md:text-xl p-5 md:p-10 lg:p-20 bg-gray-400/20 max-w-2xl'>
+                <Link  to={`/article?id=${article.id}`}>{article.title}</Link>
+              <p className='text-sm text-right mt-4 italic'>"{article.author}"</p>
+
+            </div>
+           
             {"image" in article ? (
               <div className="w-full max-h-[500px] flex items-center justify-center overflow-hidden">
                 <img className="h-full w-auto object-cover" src={article.image} alt={article.title} />
-
-
-              </div>
-              
+              </div>              
             ) : null}
-            <p>{article.description}</p>
+            
           </div>
         </SwiperSlide>
       ))}
