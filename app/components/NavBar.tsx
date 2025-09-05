@@ -23,6 +23,7 @@ const NavBar =()=>{
                     </li>
                     <li><NavLink className={({ isActive }) => (isActive ? active : base)} to="/cantina">Cantina</NavLink></li>
                     <li><NavLink className={({ isActive }) => (isActive ? active : base)} to="/about">About</NavLink></li>
+                    <li><NavLink className={({ isActive }) => (isActive ? active : base)} to="/contact">Contact</NavLink></li>
                 </ul>
 
                 {/* Mobile Menu Button */}
@@ -45,6 +46,7 @@ const NavBar =()=>{
                         <li><NavLink className={({isActive})=>(isActive ?active :base)} to="/sports">Sports</NavLink></li>
                         <li><NavLink className={({isActive})=>(isActive ?active :base)} to="/cantina">Cantina</NavLink></li>
                         <li><NavLink className={({isActive})=>(isActive ?active :base)} to="/about">About</NavLink></li>
+                        <li><NavLink className={({ isActive }) => (isActive ? active : base)} to="/contact">Contact</NavLink></li>
                     </ul>
                 )}
             </nav>
